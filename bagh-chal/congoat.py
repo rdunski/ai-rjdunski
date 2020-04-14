@@ -17,8 +17,8 @@ class ConserveGoatAgent(Agent):
                     for row in range(Const.ROWS):
                         for col in range(Const.COLS):
                             for dir in Const.DIRS[(row,col)]:
-                                toRow : int = row+1*dir[0]
-                                toCol : int = col+1*dir[1]
+                                toRow : int = (row+1)*dir[0]
+                                toCol : int = (col+1)*dir[1]
                                 if self.game._board[toRow][toCol] == Const.MARK_GOAT:
                                     placements.append(move)
         if len(placements) != 0:
