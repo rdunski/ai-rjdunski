@@ -65,7 +65,7 @@ class Tablut(object):
         self.captured=[]                                                        #Keep track of captured pieces
 
         self._board=GameBoard()                                                 #Instantiate board
-        self.action_space=self.newMovements(Const.ATT_SIDE_MARK)                                                  #Holds all possible moves for either side
+        self.action_space=self.newMovements(Const.ATT_SIDE_MARK)                #Holds all possible moves for either side
 
         self.n_actions = len(self.action_space)                                 #Used for QLearningTable algorithm
         #self.title('tablut')
