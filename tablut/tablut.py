@@ -256,15 +256,14 @@ class Tablut(object):
                     elif self._board.board[move._toRow+(1*x[0])][move._toCol+(1*x[1])] == Const.KING\
                     and move._toRow+(1*x[0]) >= 0 and move._toCol+(1*x[1]) >= 0:                                    #and not negative indexing
 
+                        self.att_reward=self.att_reward+1                                                           #Reward the ATTACKER prematurely to
+                                                                                                                    #incentivise getting close to the KING
                                                                                                                     #First, check if the space across is the CENTER
                         if self._board.board[move._toRow+(2*x[0])][move._toCol+(2*x[1])] == Const.CENTER\
                         and move._toRow+(2*x[0]) >= 0 and move._toCol+(2*x[1]) >= 0:                                #and not negative indexing
 
                             king_row=move._toRow+(1*x[0])                                                           #Get the coordinates of the KING
                             king_col=move._toCol+(1*x[1])
-
-                            self.att_reward=self.att_reward+1                                                       #Reward the ATTACKER prematurely to
-                                                                                                                    #incentivise getting close to the KING
                                                                                                                     #If the KING has another ATTACKER next to it
                             if self._board.board[king_row+(1*x[1])][king_col+(1*x[0])] == Const.ATTACKER\
                             and king_row+(1*x[1]) >= 0 and king_col+(1*x[0]) >= 0:                                  #and not negative indexing
