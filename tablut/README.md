@@ -11,3 +11,6 @@
 `python /path/to/play.py`
 
 ##### More explanation in the code comments.
+
+##### Google Slides files [link](https://github.com/rdunski/ai-rjdunski/blob/master/tablut/AI%20Tablut%20QLearning.pptx)
+##### Google Slides online [link](https://docs.google.com/presentation/d/1iMIn7zuXbQgNGNIYqsVWX6EU3Kanvo3SVAIYFsgpR-A/edit#slide=id.g77611e09af_0_4006)
